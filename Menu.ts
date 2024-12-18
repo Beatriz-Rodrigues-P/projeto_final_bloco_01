@@ -2,7 +2,7 @@ import readlinesync = require("readline-sync")
 import { Controller } from "./src/Controller/Controller"
 import { Movel } from "./src/Model/Movel"
 import { Decoracao } from "./src/Model/Decoracao"
-import { colors } from "./src/Util/colors"
+import { colors } from "./src/Util/Colors"
 
 export function main(){
 
