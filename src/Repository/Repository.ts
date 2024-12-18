@@ -3,9 +3,9 @@ import { Principal } from "../Model/Principal"
 export interface Repository{
 
     //Métodos do CRUD (Create, Read, Update e Delete)
-    cadastrar():void
+    cadastrar(item:Principal):void
     listartodos():void
-    listarID():void
-    atualizar():void
-    apagar():void
+    listarID(item:number):void
+    atualizar(item:Principal):void
+    apagar(id:number):void
 }

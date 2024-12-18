@@ -3,9 +3,9 @@ import {Principal} from "./Principal"
 export class Movel extends Principal{
     
     private _material:string;
-	private _dimensoes: number;
+	private _dimensoes:string;
 
-	constructor(id: number, nome: string, tipo: number, preco: number, material: string, dimensoes: number){
+	constructor(id: number, nome: string, tipo: number, preco: number, material: string, dimensoes: string){
 		super(id, nome, tipo, preco)
 		this._material = material
 		this._dimensoes = dimensoes
@@ -15,7 +15,7 @@ export class Movel extends Principal{
 		return this._material
 	}
 
-	public get dimensoes(): number {
+	public get dimensoes(): string {
 		return this._dimensoes
 	}
 
@@ -23,7 +23,7 @@ export class Movel extends Principal{
 		this._material = value
 	}
 
-	public set dimensoes(value: number) {
+	public set dimensoes(value: string) {
 		this._dimensoes = value
 	}
 
